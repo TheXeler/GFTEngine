@@ -13,4 +13,4 @@
 07/23/2020 alpha v0.1  
 更新了基本框架，将项目发布至GitHub  
 
-[联系作者](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ahIPBg8YKgwFEgcLAwZECQUH)（邮箱）  
+[联系主工程师](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ahIPBg8YKgwFEgcLAwZECQUH)（邮箱）  
