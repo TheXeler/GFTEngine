@@ -1,7 +1,7 @@
 # **GFTEngine**  
 简介  
 -  
-一个基于Java开发的2D俯瞰视角游戏开发引擎，完全支持extends，基于API23开发  
+一个以Java开发的Android2D游戏开发引擎，基于API23开发，完全支持extends  
 
 食用指南  
 -  
