@@ -5,7 +5,7 @@
 
 食用指南  
 -  
-将code/gft文件夹下载，并将其加入到你的项目当中，然后按照开发者文档初始化一个GFTEngine类并开始使用  
+将code/gftengine文件夹下载，并将其加入到你的项目当中，然后按照开发者文档初始化一个GFTEngine类并开始使用  
 强烈建议将GFTEngine挂靠在自定义Application下以保持稳定  
 
 更新日志  
