@@ -4,8 +4,11 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -67,7 +70,7 @@ public class SrpgDisplaySystem {
 
     //将ActivePaster绘制到缓冲屏幕上
     //Make of Alpha
-    public void drawNextScreen() {
+    public void updateFrame() {
         int point = alphaPaster.size() - 1;
         AlphaPaster justLittlePrick;
         canvas.drawColor(Color.BLACK);
@@ -158,8 +161,10 @@ public class SrpgDisplaySystem {
             break;
         }
         if ((System.currentTimeMillis()-clickCount)<=1000){
-            playEventManager.appendEvent(new PlayEvent(1000,));
-            playEventManager.appendEvent();
+            /*
+            playEventManager.appendEvent(new PlayEvent(500,));
+            playEventManager.appendEvent(new PlayEvent(500, PlayEvent.TYPE.Paster, PlayEvent.ACTION.SmoothMove,"Test"),);
+             */
         }
         //This
         return true;
@@ -256,8 +261,9 @@ class PlayEventManager{
     protected ArrayList<PlayEvent> eventList;
     protected ArrayList<Long> eventTimeList;
 
-    public void appendEvent(PlayEvent event,int time){
-
+    public void appendEvent(PlayEvent event,long time){
+        eventList.add(event);
+        eventTimeList.add(time);
     }
 }
 
