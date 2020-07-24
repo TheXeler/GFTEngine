@@ -158,8 +158,10 @@ public class SrpgDisplaySystem {
             break;
         }
         if ((System.currentTimeMillis()-clickCount)<=1000){
-            playEventManager.appendEvent(new PlayEvent(1000,));
-            playEventManager.appendEvent();
+            /*
+            playEventManager.appendEvent(new PlayEvent(500,));
+            playEventManager.appendEvent(new PlayEvent(500,,));
+             */
         }
         //This
         return true;

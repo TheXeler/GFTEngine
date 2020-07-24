@@ -65,15 +65,14 @@ public class GFTEngine {
         Bitmap bitmap = Bitmap.createBitmap(screenSizeX, screenSizeY, Bitmap.Config.ARGB_8888);
         gameScreenCanvas = new Canvas(bitmap);
         gameScreen = view;
-        Log.d("TAG","pasters is "+String.valueOf(srpgDisplaySystem.getAlphaPaster()));
         gameScreen.setImageBitmap(bitmap);
         gameScreen.setOnTouchListener(new View.OnTouchListener() {
 
-            ReworkApplication reworkApplication=null;
+            ReworkApplication reworkApplication = null;
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if(reworkApplication==null) {
+                if (reworkApplication == null) {
                     reworkApplication = ((ReworkApplication) ((Activity) v.getContext()).getApplication());
                 }
                 return reworkApplication.getControlSystem().getSrpgDisplaySystem().onTouchListener(event);
