@@ -1,0 +1,33 @@
+string 角色名
+string 职业名
+int 等级
+int 经验
+int 血量
+int 血量上限
+? 技能插槽
+boolean 重要人物
+
+int 力量
+int 智力
+int 灵巧
+int 速度
+int 体质
+int 幸运
+int 防御
+int 魔防
+int 移动力
+
+int 力量成长
+int 智力成长
+int 灵巧成长
+int 速度成长
+int 体质成长
+int 幸运成长
+int 防御成长
+int 魔防成长
+int 移动力成长
+
+backpack[] 道具列表
+buff[] buff列表
+
+常驻Paster：全局UI、控制菜单、设置菜单

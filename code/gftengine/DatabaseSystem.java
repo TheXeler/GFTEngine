@@ -1,24 +1,38 @@
 package com.gft.gftengine;
 
-import java.util.ArrayList;
-
 public class DatabaseSystem {
-    protected ArrayList<PlayerRole> playerRoles;
-    protected ArrayList<AIRole> aiFriendRoles,aiEnemyRoles;
 
-    public PlayerRole findRoleById(int id){
-        return playerRoles.get(id);
+
+}
+
+class VirtualMemory {
+    protected final char[] charMap = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    protected MemoryElement memoryHead;
+    protected int memoryLength;
+    protected int[] firstCharPoint = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+}
+
+class MemoryElement {
+    public int data;
+    public MemoryElement nextElement;
+
+    MemoryElement(int i) {
+        data = i;
+        nextElement = null;
     }
 
-    public AIRole findRoleById(int id,boolean isAIFriendRole){
-        if(isAIFriendRole){
-            return aiFriendRoles.get(id);
-        }else {
-            return aiEnemyRoles.get(id);
-        }
+    public void deleteElement() {
+        this.data = nextElement.data;
+        this.nextElement = nextElement.nextElement;
+    }
+
+    public void insertElement(MemoryElement newElement) {
+        newElement.nextElement = this.nextElement;
+        this.nextElement = newElement;
     }
 }
 
+/*
 class Role {
     protected String name;
     //名字
@@ -129,3 +143,4 @@ class AIRole extends Role {
         return tempRole;
     }
 }
+*/

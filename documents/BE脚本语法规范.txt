@@ -1,0 +1,36 @@
+关键字列表：
+int while if else switch string goto
+运算符
+() + - * / = % ^ [] "" _
+== >= <= != & | !
+优先级排序：
+() []
+! -
+* / %
++ -
+< > <= >=
+== !=
+&
+|
+=
+
+10+5+-7
+
+语义分析·贪心法
+
+toast() setData() getData()
+引用传递
+
+toast(string text)                           - 输出一行提示
+setData(string chrName,string varName,int i) - 将chrName实体的varName变量的值设定为i
+getData(string chrName,string varName,int i) - 将chrName实体的varName变量的值输出至i
+语法：
+以分号为结尾
+空格会被略去
+
+错误列表：
+noError           - 无误
+syntaxError       - 有致命的语法错误
+noEnoughMemory    - 内存空间不足
+cantFindSystemVar - 非系统变量
+varNameError      - 不正确的本地变量名

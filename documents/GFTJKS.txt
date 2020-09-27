@@ -1,0 +1,4 @@
+Name:GFTTeam.jks
+Password:GFTTeam
+
+key0(YML1) - 20200603
