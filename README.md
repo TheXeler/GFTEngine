@@ -20,5 +20,7 @@
 -
 07/23/2020 alpha v0.1
 更新了基本框架，将项目发布至GitHub
+09/27/2020 alpha v0.2
+添加了两个新的支持模块（*Support.java），重新规划整体结构
 
 [联系作者](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ahIPBg8YKgwFEgcLAwZECQUH)（邮箱）
